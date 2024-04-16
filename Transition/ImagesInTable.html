@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition with images</title>
+    <style>
+        body
+        {
+            background-color: rgb(239, 121, 121);
+        }
+        h1
+        {
+            color: blueviolet;
+        }
+        table,tr,th
+        {
+            border: 3px solid black;
+            border-collapse: collapse;
+            padding: 50px;
+        }
+        #image
+        {
+            font-size: 25px;
+          background-color: burlywood;
+        }
+        #cric,#hyd
+        {
+            font-size: 20px;
+           color: rgb(37, 2, 71);
+        }
+        #kohli,#rohith,#gayle,#ab,#max,
+        #char,#gol,#birla,#salar,#nehru
+
+        {
+            
+            transition: all 4s ease;
+            color: purple;
+            
+        }
+        #kohli:hover
+        {
+            transform: rotate(360deg);
+            background-image: url('./kohli.jpeg');
+            background-size: 198px 180px;
+            background-repeat: no-repeat;
+
+        }
+        #rohith:hover
+        {
+            transform: rotateY(360deg);
+            background-image: url('./rohith.png');
+            background-size: 210px 180px;
+            background-repeat: no-repeat;
+
+        }
+        #gayle:hover
+        {
+            transform: rotateX(360deg);
+            background-image: url('./gayle.png');
+            background-size: 199px 180px;
+            background-repeat: no-repeat;
+
+        }
+        #ab:hover
+        {
+            transform: rotate(360deg);
+            background-image: url('./ab.jpg');
+            background-size: 228px 180px;
+            background-repeat: no-repeat;
+
+        }
+        #max:hover
+        {
+            transform: rotate(360deg);
+            background-image: url('./max.jpeg');
+            background-size: 255px 180px;
+            background-repeat: no-repeat;
+
+        }
+        #char:hover
+        {
+            transform: rotateY(360deg);
+            background-image: url('./char.jpeg');
+            background-size: 198px 180px;
+            background-repeat: no-repeat;
+
+        }
+        #gol:hover
+        {
+            transform: rotate(360deg);
+            background-image: url('./gol.jpeg');
+            background-size: 210px 180px;
+            background-repeat: no-repeat;
+
+        }
+        #birla:hover
+        {
+            transform: rotate(360deg);
+            background-image: url('./birla.jpeg');
+            background-size: 199px 180px;
+            background-repeat: no-repeat;
+
+
+        }
+        #salar:hover
+        {
+            transform: rotate(360deg);
+            background-image: url('./salar.jpg');
+            background-size: 228px 180px;
+            background-repeat: no-repeat;
+
+        }
+        #nehru:hover
+        {
+            transform: rotateX(360deg);
+            background-image: url('./nehru.jpg');
+            background-size: 255px 180px;
+            background-repeat: no-repeat;
+
+
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Images In Table</h1>
+        <table>
+            <tr>
+                <th colspan="6" id="image">Images</th>
+            </tr>
+            <tr>
+                <th id="cric">Cricketers</th>
+                <th id="kohli">Kohli</th>
+                <th id="rohith">Rohith</th>
+                <th id="gayle">Gayle</th>
+                <th id="ab">Ab</th>
+                <th id="max">Maxwell</th>
+            </tr>
+            <tr>
+                <th id="hyd">Places In Hyd</th>
+                <th id="char">Charminar</th>
+                <th id="gol">Golconda</th>
+                <th id="birla">Birla Mandir</th>
+                <th id="salar">Salar Jun Museum</th>
+                <th id="nehru">Nehru Zoological Park</th>
+            </tr>
+        </table>
+    </center>
+    
+</body>
+</html>
